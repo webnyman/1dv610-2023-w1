@@ -12,7 +12,7 @@ const translateToRovarSprak = (textToTranslate) => {
   }
   return rovarSprak
 }
-console.log(translateToRovarSprak('Cecilia'))
+console.log(translateToRovarSprak('Cecilia')) // Lägg till text du vill koda till Rövarspråk här
 
 // Översätt från rövarspråk till vanlig text
 
@@ -35,4 +35,4 @@ const translateFromRovarsprak = (textToTranslate) => {
   }
   return decodedRovarSprak
 }
-console.log(translateFromRovarsprak('bobjojörornon'))
+console.log(translateFromRovarsprak('bobjojörornon')) // Lägg till text du vill avkoda från Rövarspråk här
