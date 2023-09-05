@@ -2,4 +2,5 @@
 
 Nodejs - Javascript
 
+installera med npm install
 Starta med node app.js
