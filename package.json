@@ -1,0 +1,19 @@
+{
+  "name": "1dv610w1",
+  "version": "1.0.0",
+  "description": "Workshop 1 !dv610",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webnyman/1dv610-2023-w1.git"
+  },
+  "author": "Björn Nyman Cecilia Jonsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webnyman/1dv610-2023-w1/issues"
+  },
+  "homepage": "https://github.com/webnyman/1dv610-2023-w1#readme"
+}
