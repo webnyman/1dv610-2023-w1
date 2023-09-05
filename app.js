@@ -1,4 +1,4 @@
-// Översättningsdel
+// Översätt vanlig text till rövarspråk
 // -----------------------------------
 const translateToRovarSprak = (textToTranslate) => {
   const vowels = ['a', 'o', 'u', 'å', 'e', 'i', 'y', 'ä', 'ö']
@@ -15,6 +15,7 @@ const translateToRovarSprak = (textToTranslate) => {
 console.log(translateToRovarSprak('Cecilia'))
 
 // Översätt från rövarspråk till vanlig text
+
 const translateFromRovarsprak = (textToTranslate) => {
   const vowels = ['a', 'o', 'u', 'å', 'e', 'i', 'y', 'ä', 'ö']
   let decodedRovarSprak = ''
@@ -22,10 +23,15 @@ const translateFromRovarsprak = (textToTranslate) => {
     if (vowels.includes(textToTranslate[i])) {
       decodedRovarSprak += textToTranslate[i]
     } else {
-      decodedRovarSprak += textToTranslate[i]
-      i = i + 2
+      if (textToTranslate[i] === textToTranslate[(i + 2)] && vowels.includes(textToTranslate[(i + 1)])) {
+        decodedRovarSprak += textToTranslate[i]
+        i = i + 2
+      } else {
+        decodedRovarSprak = 'Detta är inte rövarspråk!'
+        break
+      }
     }
   }
   return decodedRovarSprak
 }
-console.log(translateFromRovarsprak('bobjojörornon'))
+console.log(translateFromRovarsprak('boljojörornon'))
