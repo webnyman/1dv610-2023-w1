@@ -23,7 +23,8 @@ const translateFromRovarsprak = (textToTranslate) => {
     if (vowels.includes(textToTranslate[i])) {
       decodedRovarSprak += textToTranslate[i]
     } else {
-      if (textToTranslate[i] === textToTranslate[(i + 2)] && vowels.includes(textToTranslate[(i + 1)])) {
+      // Check if text to translate is rövarspråk
+      if (textToTranslate[i] === textToTranslate[(i + 2)] && (textToTranslate[(i + 1)]) === 'o') {
         decodedRovarSprak += textToTranslate[i]
         i = i + 2
       } else {
@@ -34,4 +35,4 @@ const translateFromRovarsprak = (textToTranslate) => {
   }
   return decodedRovarSprak
 }
-console.log(translateFromRovarsprak('boljojörornon'))
+console.log(translateFromRovarsprak('bobjojörornon'))
